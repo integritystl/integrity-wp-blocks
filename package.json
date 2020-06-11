@@ -1,0 +1,32 @@
+{
+  "name": "project-name",
+  "version": "1.0.0",
+  "description": "Website for Project Name.",
+  "main": "gulpfile.js",
+  "author": "Integrity",
+  "scripts": {
+    "build-production": "gulpfile.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:integritystl/project-name.git"
+  },
+  "dependencies": {
+    "bourbon": "^5.0.1",
+    "bourbon-neat": "^1.9.0",
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^3.0.0"
+  },
+  "homepage": "https://github.com/integritystl/project-name"
+}

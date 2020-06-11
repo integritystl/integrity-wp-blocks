@@ -1,0 +1,34 @@
+button,
+.btn,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	word-break: break-all;
+	-webkit-appearance: none;
+	background-color: #f0542c;
+	border-radius: 3px;
+	border: 1px solid;
+	border-color: #f0542c;
+	color: #fff;
+	display: inline-block;
+	font-size: 1.0625em;
+	margin: 0;
+	padding: 15px 60px;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	//max-width: 250px;
+
+	&:hover {
+		background-color: darken(#f0542c, 10%);
+		color: white;
+	}
+
+	&:active,
+	&:focus {
+		background-color: darken(#f0542c, 10%);
+		color: white;
+	}
+}
