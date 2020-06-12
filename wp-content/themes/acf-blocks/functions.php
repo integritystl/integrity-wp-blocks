@@ -26,6 +26,7 @@ require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-image-slider.p
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-callout-slider.php');
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-accordion.php');
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-social-share.php');
+require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-fancy-posts.php');
 
 //Stop color picker maddness
 function klf_acf_input_admin_footer() { ?>

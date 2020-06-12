@@ -12,11 +12,11 @@ $textAlign = get_field('callout_alignment');
 
 ?>
 
-<div class="block-content container" style="">
+<div class="callout-slider-block block-content container" style="">
 
   <div class="callout-slider-wrapper">
 
-    <div class="callout-slider block-content-section <?php echo($textAlign); ?>;" style="background:url('<?php echo($slideBackgroundImg); ?>') <?php echo($slideColor); ?>; color:<?php echo($textColor); ?>;">
+    <div class="block-content-section <?php echo($textAlign); ?>;" style="background:url('<?php echo($slideBackgroundImg); ?>') <?php echo($slideColor); ?>; color:<?php echo($textColor); ?>;">
     	<!-- Begin Repeater -->
 		<?php if( have_rows('callout_content') ): ?>
 			<?php while ( have_rows('callout_content') ) : the_row();

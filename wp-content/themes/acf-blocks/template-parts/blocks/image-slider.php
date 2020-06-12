@@ -10,11 +10,9 @@ $sliderLayout = get_field('slider_style')
 
 ?>
 
-<div class="block-content container">
+<div class="image-slider-block block-content container">
 
-  <div class="slider-wrapper">
-
-    <div class="image-slider block-content-section <?php echo($sliderLayout); ?>">
+    <div class="block-content-section <?php echo($sliderLayout); ?>">
     	<?php if( $images ): ?>
 		    <ul>
 		        <?php foreach( $images as $image ): ?>
@@ -28,7 +26,5 @@ $sliderLayout = get_field('slider_style')
 		    </ul>
 		<?php endif; ?>
     </div>
-
-  </div>
 
 </div>

@@ -8,9 +8,9 @@
 
 ?>
 
-<div class="block-content container">
+<div class="accordion-block block-content container">
 
-    <div class="accordion block-content-section">
+    <div class="block-content-section">
 
       	<!-- Begin Accordion -->
 		<?php if( have_rows('accordion_repeater') ): ?>

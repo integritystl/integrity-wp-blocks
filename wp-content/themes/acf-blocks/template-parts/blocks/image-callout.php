@@ -16,9 +16,7 @@ $textAlign = get_field('align_text');
 
 ?>
 
-<div class="block-content container">
-
-  <div class="image-callout">
+<div class="image-callout-block block-content container">
 
   	<div class="image-wrapper">
   		<?php if ($calloutImage): ?>
@@ -53,7 +51,5 @@ $textAlign = get_field('align_text');
 
 		<?php endif; ?>
     </div>
-
-  </div>
 
 </div>
