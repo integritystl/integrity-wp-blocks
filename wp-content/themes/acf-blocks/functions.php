@@ -12,12 +12,20 @@
 require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-basic-content.php');
 require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-button-group.php');
 require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-image-callout.php');
-
+require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-image-slider.php');
+require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-callout-slider.php');
+require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-accordion.php');
+require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-social-share.php');
+require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-fancy-posts.php');
 
 //All Block ACFs
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-basic-content.php');
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-button-group.php');
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-image-callout.php');
+require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-image-slider.php');
+require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-callout-slider.php');
+require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-accordion.php');
+require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-social-share.php');
 
 //Stop color picker maddness
 function klf_acf_input_admin_footer() { ?>
@@ -33,6 +41,8 @@ function klf_acf_input_admin_footer() { ?>
 	</script>
 	<?php }
 add_action('acf/input/admin_footer', 'klf_acf_input_admin_footer');
+
+
 
 //SVG Support in Media Uploader
 function add_file_types_to_uploads($file_types){
