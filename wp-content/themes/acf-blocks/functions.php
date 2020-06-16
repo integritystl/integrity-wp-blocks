@@ -17,6 +17,7 @@ require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-callou
 require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-accordion.php');
 require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-social-share.php');
 require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-fancy-posts.php');
+require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-team-card.php');
 
 //All Block ACFs
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-basic-content.php');
@@ -43,7 +44,8 @@ function klf_acf_input_admin_footer() { ?>
 	<?php }
 add_action('acf/input/admin_footer', 'klf_acf_input_admin_footer');
 
-
+//Add featured image
+add_theme_support( 'post-thumbnails' );
 
 //SVG Support in Media Uploader
 function add_file_types_to_uploads($file_types){

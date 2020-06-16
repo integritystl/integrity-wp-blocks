@@ -59,6 +59,35 @@
 				'return_format' => 'value',
 				'save_other_choice' => 0,
 			),
+			array(
+				'key' => 'field_5ee4019718dfb',
+				'label' => 'Post Item Select',
+				'name' => 'post_item_select',
+				'type' => 'checkbox',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'choices' => array(
+					'featured-image' => 'Featured Image',
+					'date' => 'Date',
+					'author' => 'Author',
+					'category' => 'Category',
+					'post-title' => 'Post Title',
+					'post-content' => 'Content',
+				),
+				'allow_custom' => 0,
+				'default_value' => array(
+				),
+				'layout' => 'vertical',
+				'toggle' => 0,
+				'return_format' => 'value',
+				'save_custom' => 0,
+			),
 		),
 		'location' => array(
 			array(
