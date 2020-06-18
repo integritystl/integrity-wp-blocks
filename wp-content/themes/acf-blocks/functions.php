@@ -18,6 +18,9 @@ require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-accord
 require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-social-share.php');
 require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-fancy-posts.php');
 require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-team-card.php');
+require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-media-callout.php');
+require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-cta.php');
+require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-flip-card.php');
 
 //All Block ACFs
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-basic-content.php');
@@ -28,6 +31,11 @@ require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-callout-slider
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-accordion.php');
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-social-share.php');
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-fancy-posts.php');
+require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-team-card.php');
+require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-media-callout.php');
+require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-cta.php');
+require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-flip-card.php');
+
 
 //Stop color picker maddness
 function klf_acf_input_admin_footer() { ?>

@@ -70,7 +70,7 @@
 			array(
 				'key' => 'field_5ee8cb663a37e',
 				'label' => 'Description',
-				'name' => 'profile_description',
+				'name' => 'profile_blurb',
 				'type' => 'wysiwyg',
 				'instructions' => '',
 				'required' => 0,
@@ -117,7 +117,7 @@
 				array(
 					'param' => 'block',
 					'operator' => '==',
-					'value' => 'acf/team-block',
+					'value' => 'acf/team-card',
 				),
 			),
 		),

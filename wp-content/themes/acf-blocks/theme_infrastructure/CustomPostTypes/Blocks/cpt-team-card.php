@@ -8,10 +8,10 @@
 
             // register a testimonial block.
             acf_register_block_type(array(
-                'name'              => 'team-block',
+                'name'              => 'team-card',
                 'title'             => __('Team'),
                 'description'       => __('A block for a team member'),
-                'render_template'   => 'template-parts/blocks/team-card .php',
+                'render_template'   => 'template-parts/blocks/team-card.php',
                 'category'          => 'common',
                 'icon'              => 'groups',
                 'keywords'          => array( 'team', 'profile', 'cards' ),

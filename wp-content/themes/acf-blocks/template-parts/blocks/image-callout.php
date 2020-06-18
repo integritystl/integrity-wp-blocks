@@ -27,13 +27,13 @@ $textAlign = get_field('align_text');
     <div class="content-wrapper <?php echo ($textAlign); ?>" style="background:<?php echo ($textBackground); ?>;">
     	<?php if ($headline): ?>
   			<h3><?php echo ($headline); ?></h3>
-      	<?php endif; ?>
-      	<?php if ($subHeadline): ?>
+    	<?php endif; ?>
+    	<?php if ($subHeadline): ?>
   			<h4><?php echo ($subHeadline); ?></h4>
-      	<?php endif; ?>
-      	<?php if ($content): ?>
-      		<?php echo ($content); ?>
-      	<?php endif; ?>
+    	<?php endif; ?>
+    	<?php if ($content): ?>
+    		<?php echo ($content); ?>
+    	<?php endif; ?>
 
     	<!-- Begin Repeater -->
 		<?php if( have_rows('callout_links') ): ?>
