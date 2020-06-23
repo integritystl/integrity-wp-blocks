@@ -1,0 +1,7 @@
+/*This will be the translation of all the global styles selected in the admin.
+PHP cannot be compiled so this is plain css that is loaded LAST as to override any scss that was created*/
+
+/*Body Copy*/
+p{
+	font-size: <?php the_typography_field( 'body_copy', 'font_size', 'options'; ?>;
+}

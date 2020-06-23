@@ -22,23 +22,8 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'acf-flex-fields' ); ?></a>
 
     <header id="masthead" class="site-header">
-        <div class="utility-bar">
-            <div class="container">
-                <nav class="utility-bar_menu">
-                    <?php
-                    wp_nav_menu( array(
-                        'theme_location' => 'utility-menu',
-                        'menu_id' => 'utility-menu',
-                    ) );
-                    ?>
-                </nav>
-                <?php get_search_form(); ?>
-            </div>
-        </div>
-
         <div id="stickyHeader" class="main-header">
             <div class="container">
                 <div class="main-header">

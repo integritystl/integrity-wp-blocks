@@ -1,0 +1,90 @@
+// Grid
+
+//Responsive Sizes
+$mobile_width: 600px;
+$tablet_width: 850px;
+$desktop_width: 1024px;
+$desktop_wide_width: 1280px;
+$breakformobile_width: 1140px;
+
+@mixin mobile {
+  @media (min-width: #{$mobile_width}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: #{$tablet_width}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: #{$desktop_width}) {
+    @content;
+  }
+}
+@mixin desktop-wide {
+  @media (min-width: #{$desktop_wide_width}) {
+    @content;
+  }
+}
+
+@mixin break-for-mobile {
+  @media (min-width: #{$breakformobile_width}) {
+    @content;
+  }
+}
+
+
+// Fonts
+
+$proxima: "proxima-nova", sans-serif;
+$futuraPT: "futura-pt", sans-serif;
+$font__main: $proxima;
+$font__headings: $futuraPT;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 28px;
+$font__line-height-pre: 1.6;
+
+// Colors
+
+$gray: #f5f5f5;
+$gray__dark: #292929;
+$teal: #007D9B;
+$teal__dark: #0f5d7d;
+$magenta: #972469;
+$magenta__dark: #83365d;
+$purple: #420538;
+$purple__dark: #22081e;
+$green: #6fbd6e;
+$green__dark: #239465;
+
+// Boxshadow (we were using this too much!)
+$boxshadow: 0px 5px 5px rgba(0,0,0,.15);
+
+// Gradients
+
+$purpleGradient: linear-gradient(90deg, rgba(143,28,76,1) 0%, rgba(94,27,81,1) 50%, rgba(53,33,88,1) 100%);
+$tealGradient: linear-gradient(108deg, rgba(11,81,118,1) 0%, rgba(40,160,165,1) 100%);
+
+
+$color__background-body: #fff;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #e6e6e6;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: $teal;
+$color__link-visited: $teal;
+$color__link-hover: $teal__dark;
+$color__text-main: $gray__dark;
+
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;

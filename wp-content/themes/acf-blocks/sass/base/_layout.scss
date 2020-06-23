@@ -1,0 +1,159 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+ background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+ overflow-x: hidden;
+ position: relative;
+
+}
+
+#wpadminbar {
+	z-index: 99999999;
+}
+
+#content {
+//	position: relative;
+	z-index: 0;
+
+}
+
+.site {
+	overflow: hidden;
+}
+
+.site-main {
+		margin-bottom: 0px!important;
+}
+
+.container {
+	max-width: 1240px;
+	padding: 0 20px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+//lazy load
+
+// header,
+// .hero,
+// .scroll-content {
+// 	opacity: 0;
+// 	transition: opacity 0s ease-in-out;
+// }
+
+.home-scroll-content,
+.scroll-content {
+	position: relative;
+	background-color: #ffffff;
+	z-index: 99999;
+	overflow: hidden;
+}
+.page-template-page-history,
+.single-team-member {
+	.scroll-content {
+		overflow: visible;
+			z-index: 999;
+	}
+}
+.lock-scroll {
+	.site {
+		position: fixed!important;
+		width: 100%;
+	}
+}
+
+
+hr {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+figure {
+	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+.sticky {
+	display: block;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+
+
+/*Flex Grid*/
+.row {
+
+	@include tablet {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+
+		/*	This column structure allows you to just add the class to the div to allow for fluid columns based on content and layout
+		When building always add .row and then the col structure after.
+		Col  = takes up ALL columns*/
+
+		/*	This column structure allows you to just add the class to the div to allow for fluid columns based on content and layout
+		When building the _[number] should always = 100% or be a col*/
+
+		.col{
+			flex-basis: 100%;
+		}
+		.col_75{
+			flex-basis: 75%;
+		}
+		.col_66{
+			flex-basis: 66.6%;
+		}
+		.col_60{
+			flex-basis: 60%;
+		}
+		.col_50{
+			flex-basis: 50%;
+		}
+		.col_33{
+		  width: 33.33%;
+		}
+		.col_25 {
+			flex-basis: 25%;
+		}
+		.col_20{
+			 width: calc(20% - 15px);
+		}
+	}
+}

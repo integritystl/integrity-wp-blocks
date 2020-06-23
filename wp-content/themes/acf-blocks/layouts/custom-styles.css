@@ -1,0 +1,31 @@
+
+<!-- Typography -->
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.2;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 0px;
+	text-decoration: none;
+	text-transform: none;
+}
+
+h1 {
+	color: #000;
+	font-family: Aref Ruqaa;
+	line-height: 1.2;
+	font-size: 60px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 0px;
+	text-decoration: none;
+	text-transform: none;
+}

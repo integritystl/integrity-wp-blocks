@@ -36,14 +36,45 @@ require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-media-callout.
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-cta.php');
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-flip-card.php');
 
+require_once( __DIR__ . '/theme_infrastructure/ACF/acf-options.php');
+
+
+//Global Settings page
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Theme General Settings',
+		'menu_title'	=> 'Theme Settings',
+		'menu_slug' 	=> 'theme-general-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Header Settings',
+		'menu_title'	=> 'Header',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Footer Settings',
+		'menu_title'	=> 'Footer',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+	
+}
+
+
 
 //Stop color picker maddness
-function klf_acf_input_admin_footer() { ?>
+function klf_acf_input_admin_footer() { 
+	?>
+	
 	<script type="text/javascript">
 		(function($) {
 		acf.add_filter('color_picker_args', function( args, $field ){
 			// add the hexadecimal codes here for the colors you want to appear as swatches
-			args.palettes = ['#2facbf', '#474747']
+			args.palettes = ['#444444']
 			// return colors
 			return args;
 			});
@@ -63,6 +94,25 @@ function add_file_types_to_uploads($file_types){
     return $file_types;
 }
 add_action('upload_mimes', 'add_file_types_to_uploads');
+
+function blocks_scripts() {
+
+    //CSS
+	wp_enqueue_style( 'blocks-style', get_template_directory_uri() . '/style.min.css');
+	wp_enqueue_style( 'custom-styles', get_template_directory_uri() . '/layouts/custom-styles.css' );
+	}
+
+add_action( 'wp_enqueue_scripts', 'blocks_scripts' );
+
+// Adds the new custom styles to the theme
+function generate_options_css() {
+    $ss_dir = get_stylesheet_directory();
+    ob_start(); // Capture all output into buffer
+    require($ss_dir . '/inc/custom-styles.php'); // Grab the custom-style.php file
+    $css = ob_get_clean(); // Store output in a variable, then flush the buffer
+    file_put_contents($ss_dir . '/layouts/custom-styles.css', $css, LOCK_EX); // Save it as a css file
+}
+add_action( 'acf/save_post', 'generate_options_css', 20 ); //Parse the output and write the CSS file on post save 
 
 /**
  * Implement the Custom Header feature.
