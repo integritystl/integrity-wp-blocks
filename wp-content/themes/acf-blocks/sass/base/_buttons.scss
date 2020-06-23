@@ -1,0 +1,133 @@
+.button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: $teal;
+	border-radius: 0px;
+	background: $teal;
+	color: white;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .3s all ease-in-out;
+	padding: 20px 35px;
+	display: table;
+
+	&:hover {
+		color: white;
+		border-color: $teal__dark;
+		background-color: $teal__dark;
+		cursor: pointer;
+		text-decoration: none;
+	}
+
+	&:active,
+	&:focus {
+		color: white;
+		border-color: $teal;
+		outline: 1px dotted gray;
+	}
+
+	&:visited {
+		color: white;
+	}
+}
+
+.button-inverse {
+	@extend .button;
+	border: 2px solid;
+	background: none;
+	color: $teal;
+
+	&:active,
+	&:focus {
+		color: $teal;
+		background: none;
+	}
+
+}
+
+.link-learn-more,
+.link {
+	color: #006178;
+	text-decoration: none;
+
+	span {
+		border-bottom: 1px solid $teal;
+	}
+	&:after {
+		font-family: "Font Awesome 5 Pro";
+		font-weight: 300;
+		content: '\f178';
+		padding-left: 10px;
+		text-decoration: none;
+		position: relative;
+		transition: all .3s ease-in-out;
+		right: 0;
+	}
+
+	&:hover {
+		text-decoration: none;
+		span {
+			transition: border-color .3s ease-in-out;
+			border-bottom: 1px solid $teal__dark;
+			//transform: translateX(10px);
+		}
+		&:after {
+			right: -5px;
+		}
+	}
+}
+
+
+.link-back-to {
+	color:#006178;
+	text-decoration: none;
+
+	span {
+		border-bottom: 1px solid $teal;
+	}
+	&:before {
+		font-family: "Font Awesome 5 Pro";
+		font-weight: 300;
+		content: '\f177';
+		padding-right: 10px;
+		text-decoration: none;
+		position: relative;
+		transition: all .3s ease-in-out;
+		left: 0;
+	}
+
+	&:hover {
+		text-decoration: none;
+		span {
+			transition: border-color .3s ease-in-out;
+			border-bottom: 1px solid $teal__dark;
+		}
+		&:before {
+				left: -5px;
+		}
+	}
+}
+
+.subscribe-button {
+	margin: 40px auto 0;
+	display: table;
+	text-align: center;
+	width: 100%;
+	max-width: 300px;
+}
+
+
+.site-footer .subscribe-button {
+	margin: 20px auto 0;
+	display: table;
+	text-align: center;
+	width: 100%;
+	padding: 15px 15px;
+
+}
