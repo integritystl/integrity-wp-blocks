@@ -7,8 +7,8 @@ input,
 select,
 optgroup,
 textarea {
-	color: #cc269f;
-	font-family: Amiko;
+	color: #000;
+	font-family: Open Sans;
 	line-height: 1.2;
 	font-size: 16px;
 	font-weight: 400;
@@ -19,8 +19,8 @@ textarea {
 }
 
 h1 {
-	color: #d0db0d;
-	font-family: Aref Ruqaa;
+	color: #000;
+	font-family: Open Sans;
 	line-height: 1.2;
 	font-size: 60px;
 	font-weight: 400;
@@ -31,8 +31,8 @@ h1 {
 }
 
 h2 {
-	color: #353ca0;
-	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+	font-family: Open Sans;
 	line-height: 1.2;
 	font-size: 48px;
 	font-weight: 400;
@@ -43,7 +43,7 @@ h2 {
 }
 
 h3 {
-	color: #113ca0;
+	color: #000;
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.2;
 	font-size: 36px;
@@ -55,8 +55,8 @@ h3 {
 }
 
 h4 {
-	color: #000000;
-	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+	font-family: Asap;
 	line-height: 1.2;
 	font-size: 28px;
 	font-weight: 400;
@@ -67,7 +67,7 @@ h4 {
 }
 
 h5 {
-	color: #9815af;
+	color: #000;
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.2;
 	font-size: 21px;

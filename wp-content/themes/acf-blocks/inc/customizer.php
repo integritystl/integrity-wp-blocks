@@ -1,6 +1,6 @@
 <?php
 /**
- * ACF Flex Fields Theme Customizer
+ * ACF Blocks Theme Customizer
  *
  * @package ACF_Blocks
  */
