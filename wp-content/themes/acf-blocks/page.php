@@ -17,7 +17,7 @@
 
  	<div id="primary" class="content-area">
  		<main id="main" class="site-main">
- 			<div class="page-content container">
+ 			<div class="page-content container container-width">
  				<?php
  				while ( have_posts() ) :
  					the_post();

@@ -28,14 +28,14 @@
             <div class="container">
                 <div class="main-header">
                     <div class="site-branding">
-                        <?php the_custom_logo(); ?>
+                       <img src="<?php the_field('logo', 'option'); ?>"> 
                     </div><!-- .site-branding -->
 
                     <nav id="site-navigation" class="main-navigation">
                         <?php
                         wp_nav_menu( array(
-                            'theme_location' => 'primary-menu',
-                            'menu_id'        => 'primary-menu',
+                            'theme_location' => 'main-nav',
+                            'menu_id'        => 'main-nav',
                         ) );
                         ?>
                     </nav><!-- #site-navigation -->

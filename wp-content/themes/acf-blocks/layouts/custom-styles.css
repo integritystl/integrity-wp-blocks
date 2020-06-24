@@ -1,5 +1,12 @@
 
-<!-- Typography -->
+
+.container {
+ 	max-width: 1024px;
+}
+
+/*//////////////////////
+	     Typography 
+ ///////////////////////*/
 
 body,
 button,
@@ -75,7 +82,7 @@ h5 {
 	font-style: normal;
 	letter-spacing: 0px;
 	text-decoration: none;
-	text-transform: none;
+	text-transform: uppercase;
 }
 
 h6 {
@@ -88,4 +95,115 @@ h6 {
 	letter-spacing: 0px;
 	text-decoration: none;
 	text-transform: none;
+}
+
+a {
+	color: #6d52b2;
+	font-family: Arya;
+	line-height: 1.2;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	letter-spacing: 0px;
+	text-decoration: none;
+	text-transform: none;
+}
+
+a:hover {
+	color: #590c6b;
+	font-style: normal;
+	text-decoration: underline;
+}
+
+/*///////////////////////
+	      Buttons 
+ ///////////////////////*/
+
+.button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	color: #999999;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.2;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 0px;
+	text-decoration: none;
+	text-transform: none;
+
+	background: #5dd613;
+	border: 2px solid #298206;
+
+	text-decoration: none;
+}
+.button:hover{
+	background: transparent;
+	broder-color: #5dd613;
+}
+
+.secondary-button {
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.2;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 0px;
+	text-decoration: none;
+	text-transform: none;
+
+	background: #133fc4;
+	border: 2px solid #078463;
+
+	text-decoration: none;
+}
+.secondary-button:hover{
+	background: transparent;
+	broder-color: #133fc4;
+}
+
+/*///////////////////////
+	        FORMS 
+ ///////////////////////*/
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: ;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: px;
+	text-decoration: ;
+	text-transform: none;
+
+	padding: ;
+	border:0px solid ;
+}
+
+/*///////////////////////
+	    Header Logo 
+ ////////////////////////*/
+
+.main-header{
+	background:#dd9933;
+}
+.site-branding{
+	width:150px;
 }

@@ -64,27 +64,15 @@ if( function_exists('acf_add_options_page') ) {
 	
 }
 
-
-
-//Stop color picker maddness
-function klf_acf_input_admin_footer() { 
-	?>
-	
-	<script type="text/javascript">
-		(function($) {
-		acf.add_filter('color_picker_args', function( args, $field ){
-			// add the hexadecimal codes here for the colors you want to appear as swatches
-			args.palettes = ['#444444']
-			// return colors
-			return args;
-			});
-		})(jQuery);
-	</script>
-	<?php }
-add_action('acf/input/admin_footer', 'klf_acf_input_admin_footer');
+// Menu location
+function wpb_custom_new_menu() {
+  register_nav_menu('main-nav',__( 'main-nav' ));
+}
+add_action( 'init', 'wpb_custom_new_menu' );
 
 //Add featured image
 add_theme_support( 'post-thumbnails' );
+add_theme_support( 'menus' );
 
 //SVG Support in Media Uploader
 function add_file_types_to_uploads($file_types){
