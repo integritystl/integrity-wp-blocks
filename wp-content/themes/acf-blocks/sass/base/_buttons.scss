@@ -2,27 +2,14 @@
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: $teal;
+	
 	border-radius: 0px;
-	background: $teal;
-	color: white;
-	font-size: 16px;
-	font-weight: 600;
-	line-height: 1;
-	letter-spacing: 1px;
-	text-decoration: none;
-	text-transform: uppercase;
 	transition: .3s all ease-in-out;
 	padding: 20px 35px;
 	display: table;
 
 	&:hover {
-		color: white;
-		border-color: $teal__dark;
-		background-color: $teal__dark;
-		cursor: pointer;
-		text-decoration: none;
+		
 	}
 
 	&:active,
