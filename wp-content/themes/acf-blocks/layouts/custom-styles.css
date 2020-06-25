@@ -1,7 +1,7 @@
 
 
 .container {
- 	max-width: 1200px;
+ 	max-width: 1024px;
 }
 
 /*//////////////////////
@@ -14,8 +14,8 @@ input,
 select,
 optgroup,
 textarea {
-	color: #000;
-	font-family: Open Sans;
+	color: #cc269f;
+	font-family: Amiko;
 	line-height: 1.2;
 	font-size: 16px;
 	font-weight: 400;
@@ -26,8 +26,8 @@ textarea {
 }
 
 h1 {
-	color: #000;
-	font-family: Open Sans;
+	color: #d0db0d;
+	font-family: Aref Ruqaa;
 	line-height: 1.2;
 	font-size: 60px;
 	font-weight: 400;
@@ -38,8 +38,8 @@ h1 {
 }
 
 h2 {
-	color: #000;
-	font-family: Open Sans;
+	color: #353ca0;
+	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.2;
 	font-size: 48px;
 	font-weight: 400;
@@ -50,7 +50,7 @@ h2 {
 }
 
 h3 {
-	color: #000;
+	color: #113ca0;
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.2;
 	font-size: 36px;
@@ -62,8 +62,8 @@ h3 {
 }
 
 h4 {
-	color: #000;
-	font-family: Asap;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.2;
 	font-size: 28px;
 	font-weight: 400;
@@ -74,7 +74,7 @@ h4 {
 }
 
 h5 {
-	color: #000;
+	color: #9815af;
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.2;
 	font-size: 21px;
@@ -82,7 +82,7 @@ h5 {
 	font-style: normal;
 	letter-spacing: 0px;
 	text-decoration: none;
-	text-transform: none;
+	text-transform: uppercase;
 }
 
 h6 {
@@ -98,11 +98,11 @@ h6 {
 }
 
 a {
-	color: #8224e3;
-	font-family: Artifika;
-	line-height: ;
-	font-size: 15px;
-	font-weight: 400;
+	color: #6d52b2;
+	font-family: Arya;
+	line-height: 1.2;
+	font-size: 16px;
+	font-weight: 600;
 	font-style: normal;
 	letter-spacing: 0px;
 	text-decoration: none;
@@ -110,9 +110,9 @@ a {
 }
 
 a:hover {
-	color: #000;
+	color: #590c6b;
 	font-style: normal;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 /*///////////////////////
@@ -123,7 +123,7 @@ a:hover {
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	color: #000;
+	color: #999999;
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.2;
 	font-size: 16px;
@@ -133,14 +133,14 @@ input[type="submit"] {
 	text-decoration: none;
 	text-transform: none;
 
-	background: ;
-	border: 0px solid ;
+	background: #5dd613;
+	border: 2px solid #298206;
 
 	text-decoration: none;
 }
 .button:hover{
 	background: transparent;
-	broder-color: ;
+	broder-color: #5dd613;
 }
 
 .secondary-button {
@@ -154,14 +154,14 @@ input[type="submit"] {
 	text-decoration: none;
 	text-transform: none;
 
-	background: ;
-	border: 0px solid ;
+	background: #133fc4;
+	border: 2px solid #078463;
 
 	text-decoration: none;
 }
 .secondary-button:hover{
 	background: transparent;
-	broder-color: ;
+	broder-color: #133fc4;
 }
 
 /*///////////////////////
@@ -202,8 +202,11 @@ textarea {
  ////////////////////////*/
 
 .main-header{
-	background:;
+	background:#dd9933;
 }
 .site-branding{
-	width:px;
+	max-width:150px;
+}
+.main-navigation ul.menu li a{
+	color:green;
 }
