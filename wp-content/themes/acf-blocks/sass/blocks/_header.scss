@@ -6,26 +6,25 @@
 		display: block;
 		width: 100%;
 	}
-	.main-header{
+	.nav-wrapper{
 		display: flex;
 	    justify-content: space-between;
-	    align-items: center;
+	    align-items: flex-end;
 	    padding:10px 0;
 	}
 	ul.menu {
 		list-style: none;
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-end;
 		margin: 0 auto;
 		width: 100%;
 
 		@include desktop {
 			width: 100%;
-			max-width: 680px;
 		}
 
 		li {
-			flex: 1 0 auto;
+			padding:0 15px;
 
 			&.current_page_item > a,
 			&.current-menu-item > a,
@@ -112,32 +111,88 @@
 	@include desktop {
 		display: none;
 	}
-	.menu-toggle {
-		display: block;
-		height: 21px;
-		box-sizing: border-box;
+}
 
-		span {
-			display: flex;
-			width: 24px;
-			height: 2px;
-			background: black;
-			margin-bottom: 7px;
+
+/*Layout specific styles*/
+.full-screen{
+	.nav-wrapper{
+		align-items: center;
+	
+		.menu-toggle{
+			display: block;
+		}
+	}
+}
+/*Full screen menu */
+.menu-screen{
+	display: none;
+	transition: opacity 1s ease-out;
+    opacity: 0;
+	&.show-menu{
+		opacity: 1;
+		display: block;
+		height: 100vh;
+		width:100%;
+	}
+}
+
+.stripped{
+	.nav-wrapper{
+		align-items: center;
+
+		h1{
+			font-size:24px;
 		}
 	}
 }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
 
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
+/*Mobile toggle for all menues*/
+.toggle-button {
+	position: fixed;
+	width: 44px;
+	height: 40px;
+	padding: 4px;
+	transition: .25s;
+	z-index: 15;
+
+	&:hover {
+		cursor: pointer;
 	}
-	.main-navigation ul {
-		display: block;
+	.menu-bar {
+		position: absolute;
+		border-radius: 2px;
+		width: 80%;
+		transition: .5s;
+	}
+	.menu-bar-top {
+		border-bottom: none;
+		top: 0;
+	}
+	.menu-bar-middle {
+		height: 4px;
+		margin-top: 7px;
+		margin-bottom: 7px;
+		top: 4px;
+	}
+	.menu-bar-bottom {
+		border-top: none;
+		top: 22px;
+	}
+	&.button-open{
+		.menu-bar-top {
+			transform: rotate(45deg) translate(8px, 8px);
+			transition: .5s;
+		}
+		.menu-bar-middle {
+			transform: translate(230px);
+			transition: .1s ease-in;
+			opacity: 0;
+		}
+		.menu-bar-bottom {
+			transform: rotate(-45deg) translate(8px, -7px);
+			transition: .5s;
+		}
 	}
 }

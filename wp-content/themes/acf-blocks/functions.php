@@ -88,6 +88,8 @@ function blocks_scripts() {
     //CSS
 	wp_enqueue_style( 'blocks-style', get_template_directory_uri() . '/style.min.css');
 	wp_enqueue_style( 'custom-styles', get_template_directory_uri() . '/layouts/custom-styles.css' );
+
+	 wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/navigation.js', array('jquery'), time(), true );
 	}
 
 add_action( 'wp_enqueue_scripts', 'blocks_scripts' );
