@@ -207,3 +207,38 @@ textarea {
 .site-branding{
 	width:<?php the_field('logo_width', 'option');?>px;
 }
+.main-navigation a,
+.phone-nav a h1{
+	color: <?php the_typography_field('menu_items', 'text_color', 'option');?>;
+	font-family: <?php the_typography_field('menu_items', 'font_family', 'option');?>;
+	line-height: <?php the_typography_field('menu_items', 'line_height', 'option');?>;
+	font-size: <?php the_typography_field('menu_items', 'font_size', 'option');?>px;
+	font-weight: <?php the_typography_field('menu_items', 'font_weight', 'option');?>;
+	letter-spacing: <?php the_typography_field('menu_items', 'letter_spacing', 'option');?>px;
+	text-decoration: <?php the_typography_field('menu_items', 'text_decoration', 'option');?>;
+	text-transform: <?php the_typography_field('menu_items', 'text_transform', 'option');?>;
+}
+
+/*Menu toggle */
+.menu-bar-top, 
+
+.menu-bar-bottom {
+	
+	border:4px solid <?php the_field('open_icon_color', 'option'); ?>;
+}
+.button-open .menu-bar-top, 
+.button-open .menu-bar-middle, 
+.button-open .menu-bar-bottom {
+	border:4px solid <?php the_field('close_icon_color', 'option'); ?>;
+}
+.menu-bar-middle{
+	background-color: <?php the_field('open_icon_color', 'option'); ?>;
+}
+.button-open .menu-bar-middle{
+	background-color: <?php the_field('close_icon_color', 'option'); ?>;
+}
+
+/*Full Screen Mode*/
+.menu-screen{
+	background:<?php the_field('full_screen_background_color', 'option');?>;
+}
