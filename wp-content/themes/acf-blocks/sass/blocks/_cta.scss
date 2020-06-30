@@ -1,0 +1,58 @@
+.cta-block{
+	.cta-item-wrap{
+
+		/*cta content typography*/
+		.cta-content{
+			z-index: 10;
+			h3{
+				font-size: 60px;
+				font-weight: bold;
+			}
+			h4{
+				font-sze:48;
+				font-weight: bold;
+			}
+		}
+
+		/*Special full width with image background CTA*/
+		&.full-width{
+			&.col-1{
+				position: relative;
+				width:100%;
+				.image-section{
+					left: 50%;
+					margin-left: -50vw;
+					margin-right: -50vw;
+					max-width: 100vw;
+					position: relative;
+					right: 50%;
+					width: 100vw;
+					img{
+						width: inherit;
+					}
+				}
+				.img-overlay{
+					position: absolute;
+				    width: 100%;
+				    height: 100%;
+				    top: 0;
+				    left: 0;
+				    right: 0;
+				    bottom: 0;
+				    z-index: 2;
+				}
+				.cta-content{
+					position: absolute;
+				    top: 50%;
+				    left: 50%;
+				    transform: translate(-50%,-50%);
+				}
+			}
+		}
+
+		&.content-width{
+
+		}
+
+	}
+}

@@ -8,7 +8,7 @@
 
 ?>
 
-<div class="accordion-block block-content container">
+<div class="accordion-block block-content">
 
     <div class="block-content-section">
 
