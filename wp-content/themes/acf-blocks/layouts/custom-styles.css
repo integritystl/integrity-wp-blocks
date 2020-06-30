@@ -1,7 +1,7 @@
 
 
 .container {
- 	max-width: 1024px;
+ 	max-width: 1200px;
 }
 
 /*//////////////////////
@@ -14,20 +14,20 @@ input,
 select,
 optgroup,
 textarea {
-	color: #cc269f;
+	color: #000;
 	font-family: Roboto;
 	line-height: 1.2;
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 300;
 	font-style: normal;
-	letter-spacing: 0px;
+	letter-spacing: .5px;
 	text-decoration: none;
 	text-transform: none;
 }
 
 h1 {
-	color: #d0db0d;
-	font-family: Asap;
+	color: #000;
+	font-family: Roboto;
 	line-height: 1.2;
 	font-size: 60px;
 	font-weight: 400;
@@ -38,8 +38,8 @@ h1 {
 }
 
 h2 {
-	color: #353ca0;
-	font-family: Coiny;
+	color: #000;
+	font-family: Roboto;
 	line-height: 1.2;
 	font-size: 48px;
 	font-weight: 400;
@@ -50,8 +50,8 @@ h2 {
 }
 
 h3 {
-	color: #113ca0;
-	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+	font-family: Roboto;
 	line-height: 1.2;
 	font-size: 36px;
 	font-weight: 400;
@@ -62,8 +62,8 @@ h3 {
 }
 
 h4 {
-	color: #000000;
-	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+	font-family: Roboto;
 	line-height: 1.2;
 	font-size: 28px;
 	font-weight: 400;
@@ -74,20 +74,20 @@ h4 {
 }
 
 h5 {
-	color: #9815af;
-	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+	font-family: Roboto;
 	line-height: 1.2;
 	font-size: 21px;
 	font-weight: 400;
 	font-style: normal;
 	letter-spacing: 0px;
 	text-decoration: none;
-	text-transform: uppercase;
+	text-transform: none;
 }
 
 h6 {
 	color: #000;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Roboto;
 	line-height: 1.2;
 	font-size: 16px;
 	font-weight: 400;
@@ -98,11 +98,11 @@ h6 {
 }
 
 a {
-	color: #6d52b2;
-	font-family: Arya;
-	line-height: 1.2;
-	font-size: 16px;
-	font-weight: 600;
+	color: #8224e3;
+	font-family: Roboto;
+	line-height: ;
+	font-size: 15px;
+	font-weight: 400;
 	font-style: normal;
 	letter-spacing: 0px;
 	text-decoration: none;
@@ -110,9 +110,9 @@ a {
 }
 
 a:hover {
-	color: #590c6b;
+	color: #000;
 	font-style: normal;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 /*///////////////////////
@@ -123,8 +123,8 @@ a:hover {
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	color: #999999;
-	font-family: Amethysta;
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.2;
 	font-size: 16px;
 	font-weight: 400;
@@ -133,19 +133,19 @@ input[type="submit"] {
 	text-decoration: none;
 	text-transform: none;
 
-	background: #5dd613;
-	border: 2px solid #298206;
+	background: ;
+	border: 0px solid ;
 
 	text-decoration: none;
 }
 .button:hover{
 	background: transparent;
-	broder-color: #5dd613;
+	broder-color: ;
 }
 
 .secondary-button {
 	color: #000;
-	font-family: Athiti;
+	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.2;
 	font-size: 16px;
 	font-weight: 400;
@@ -154,14 +154,14 @@ input[type="submit"] {
 	text-decoration: none;
 	text-transform: none;
 
-	background: #133fc4;
-	border: 2px solid #078463;
+	background: ;
+	border: 0px solid ;
 
 	text-decoration: none;
 }
 .secondary-button:hover{
 	background: transparent;
-	broder-color: #133fc4;
+	broder-color: ;
 }
 
 /*///////////////////////
@@ -202,21 +202,21 @@ textarea {
  ////////////////////////*/
 
 .main-header{
-	background:#dd9933;
+	background:;
 }
 .site-branding{
-	width:150px;
+	width:px;
 }
 .main-navigation a,
 .phone-nav a h1{
-	color: #ffffff;
-	font-family: Aubrey;
-	line-height: 1.2;
-	font-size: 25px;
-	font-weight: 700;
-	letter-spacing: 3px;
-	text-decoration: none;
-	text-transform: none;
+	color: ;
+	font-family: ;
+	line-height: ;
+	font-size: px;
+	font-weight: ;
+	letter-spacing: px;
+	text-decoration: ;
+	text-transform: ;
 }
 
 /*Menu toggle */
@@ -224,21 +224,21 @@ textarea {
 
 .menu-bar-bottom {
 	
-	border:4px solid #ffffff;
+	border:4px solid ;
 }
 .button-open .menu-bar-top, 
 .button-open .menu-bar-middle, 
 .button-open .menu-bar-bottom {
-	border:4px solid #000000;
+	border:4px solid ;
 }
 .menu-bar-middle{
-	background-color: #ffffff;
+	background-color: ;
 }
 .button-open .menu-bar-middle{
-	background-color: #000000;
+	background-color: ;
 }
 
 /*Full Screen Mode*/
 .menu-screen{
-	background:#dd3333;
+	background:;
 }

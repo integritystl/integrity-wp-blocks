@@ -11,90 +11,22 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	font-weight: normal;
 	margin: 0 0 10px;
-}
 
-h1.small {
-	font-size: 16px;
-	text-transform: uppercase;
-	font-family: $futuraPT;
-	font-weight: 400;
-	letter-spacing: 3px;
-	margin: 0 0 10px;
-	padding: 0;
-	line-height: 1.25;
+	font-size: 80%;
 	@include tablet {
-		font-size: 24px;
+		font-size: 100%;
 	}
 }
 
-h1 {
-	font-size: 40px;
-	font-family: $futuraPT;
-	font-weight: 800;
-	text-transform: uppercase;
-	margin: 0 0 10px;
-	padding: 0;
-	line-height: 1.25;
-	@include tablet {
-		font-size: 55px;
-	}
-}
-
-h2 {
-	font-size: 30px;
-	font-family: $futuraPT;
-	font-weight: 800;
-	text-transform: uppercase;
-	margin: 0 0 10px;
-	padding: 0;
-	line-height: 1.25;
-	@include tablet {
-		font-size: 40px;
-	}
-}
-
-
-h3 {
-	font-size: 30px;
-	font-family: $futuraPT;
-	font-weight: 800;
-	margin: 0 0 10px;
-	padding: 0;
-	line-height: 1.25;
-	@include tablet {
-		font-size: 35px;
-	}
-}
-
-h4 {
-	font-size: 20px;
-	font-family: $proxima;
-	font-weight: bold;
-	margin: 0 0 10px;
-	padding: 0;
-	line-height: 1.25;
-	-webkit-font-smoothing: antialiased;
-	@include tablet {
-		font-size: 28px;
-	}
-}
-
-
-h5 {
-	font-size: 20px;
-	font-family: $proxima;
-	font-weight: 700;
-	margin: 0 0 10px;
-	padding: 0;
-	line-height: 1.25;
-	-webkit-font-smoothing: antialiased;
-	@include tablet {
-		font-size: 20px;
-	}
-}
 
 p {
 	margin: 0 0 20px 0;
+}
+
+a {
+	h1,h2,h3,h4,h5,h6 {
+		color: inherit;
+	}
 }
 
 a {
@@ -106,7 +38,7 @@ a {
 	}
 
 	&:hover {
-		cursor: pointer;
+		cursor: pointer!important;
 		text-decoration: underline;
 	}
 	&:hover,
