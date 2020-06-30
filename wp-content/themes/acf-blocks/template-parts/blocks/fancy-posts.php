@@ -9,7 +9,7 @@ $postStyle = get_field('post_list_layout');
 
 ?>
 
-<div class="fancy-posts block-content container">
+<div class="fancy-posts block-content">
 
 	<?php
 	//get relationship posts

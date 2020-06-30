@@ -10,11 +10,9 @@ $buttonDisplay = get_field('button_display');
 
 ?>
 
-<div class="block-content container">
+<div class="button-group block-content">
 
-  <div class="button-group-wrapper">
-
-    <div class="button-group block-content-section container button-<?php echo $buttonAlign; ?> button-<?php echo $buttonDisplay; ?> ">
+    <div class="button-group-wrapper button-<?php echo $buttonAlign; ?> button-<?php echo $buttonDisplay; ?> ">
     	<!-- Begin Repeater -->
 		<?php if( have_rows('button_group') ): ?>
 			<?php while ( have_rows('button_group') ) : the_row();
@@ -26,16 +24,14 @@ $buttonDisplay = get_field('button_display');
 			    $buttonColor = get_sub_field('text_color');			
 			?>
 	      	<?php if ($button): ?>
-
-    		<a class="button" style="background:<?php echo( $buttonBkgd ); ?>; color:<?php echo( $buttonColor ); ?>;" href="<?php echo esc_url( $button_link ); ?>" target="<?php echo esc_attr( $button_target ); ?>"><?php echo esc_html( $button_title ); ?></a>
-
+	      		<div class="button-holder">
+	      			<a class="button" style="background:<?php echo( $buttonBkgd ); ?>; color:<?php echo( $buttonColor ); ?>;" href="<?php echo esc_url( $button_link ); ?>" target="<?php echo esc_attr( $button_target ); ?>"><?php echo esc_html( $button_title ); ?></a>
+	      		</div>
 	      	<?php endif; ?>
 
 	    <?php endwhile;?>
 
 		<?php endif; ?>
     </div>
-
-  </div>
 
 </div>

@@ -12,7 +12,7 @@ $textAlign = get_field('callout_alignment');
 
 ?>
 
-<div class="callout-slider-block block-content container" style="">
+<div class="callout-slider-block block-content" style="">
 
   <div class="callout-slider-wrapper">
 

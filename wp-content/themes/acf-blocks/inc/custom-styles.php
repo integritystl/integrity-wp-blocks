@@ -242,3 +242,12 @@ textarea {
 .menu-screen{
 	background:<?php the_field('full_screen_background_color', 'option');?>;
 }
+
+/*///////////////////////
+	    CTA
+ ////////////////////////*/
+
+.img-overlay{
+ 	background-color: <?php the_field('cta_color_overlay'); ?>;
+ 	font-size:90px;
+}
