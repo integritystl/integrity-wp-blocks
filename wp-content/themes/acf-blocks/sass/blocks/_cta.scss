@@ -1,36 +1,60 @@
 .cta-block{
 	.cta-item-wrap{
+		display: flex;
+		flex-direction: column;
+
+		margin-top:20px;
+		&:first-of-type{
+			margin-top:0;
+		}
+		@include tablet {
+			margin-top:0px;
+		}
+
+		&.img-btm{
+			flex-direction: column-reverse;
+		}
+		&.img-right{
+			flex-direction: row-reverse;
+		}
+		&.img-left{
+			flex-direction: row;
+		}
 
 		/*cta content typography*/
 		.cta-content{
 			z-index: 10;
+			padding:15px;
 			h3{
-				font-size: 60px;
+				font-size: 48px;
 				font-weight: bold;
 			}
 			h4{
-				font-sze:48;
+				font-sze:36px;
 				font-weight: bold;
+			}
+			a{
+				margin:auto;
 			}
 		}
 
-		/*Special full width with image background CTA*/
-		&.full-width{
-			&.col-1{
-				position: relative;
-				width:100%;
-				.image-section{
-					left: 50%;
-					margin-left: -50vw;
-					margin-right: -50vw;
-					max-width: 100vw;
-					position: relative;
-					right: 50%;
-					width: 100vw;
-					img{
-						width: inherit;
-					}
-				}
+		&.img-cover,
+		&.full-wdith{
+			position: relative;
+			.cta-content{
+				text-align: center;
+				position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translate(-50%,-50%);
+			    width:100%;
+			}
+			.image-section{
+				display: flex;
+			    /*Just in case no image*/
+			    min-height: 40vh;
+			    overflow: hidden;
+			    
 				.img-overlay{
 					position: absolute;
 				    width: 100%;
@@ -41,17 +65,48 @@
 				    bottom: 0;
 				    z-index: 2;
 				}
-				.cta-content{
-					position: absolute;
-				    top: 50%;
-				    left: 50%;
-				    transform: translate(-50%,-50%);
+				img{
+					object-fit:cover;
+				}
+			}
+			/*Special full width with image background CTA*/
+			&.full-width{
+				width:100%;
+				&.col-1{
+					.image-section{
+						left: 50%;
+						margin-left: -50vw;
+						margin-right: -50vw;
+						max-width: 100vw;
+						position: relative;
+						right: 50%;
+						width: 100vw;
+						max-height: 40vh;
+						img{
+							width: inherit;
+						}
+					}
 				}
 			}
 		}
 
-		&.content-width{
+		/*Animation Trigger*/
+		&.cta-animation{
+			.image-section{
+				overflow:hidden;
+			}
+			img{
+				transition: all 1s ease-in-out;
+			}
 
+			&:hover{
+		    	img{
+		    		-ms-transform: scale(1.5); /* IE 9 */
+				    -webkit-transform: scale(1.5); /* Safari 3-8 */
+				    transform: scale(1.5); 
+		    	}
+			    	
+		    }
 		}
 
 	}

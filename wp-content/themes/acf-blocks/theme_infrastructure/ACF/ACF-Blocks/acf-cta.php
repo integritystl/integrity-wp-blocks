@@ -289,7 +289,7 @@
 					'id' => '',
 				),
 				'choices' => array(
-					'img-top' => 'Top',
+					'Top',
 					'img-right' => 'Right',
 					'img-left' => 'Left',
 					'img-btm' => 'Bottom',
@@ -317,7 +317,7 @@
 				),
 				'choices' => array(
 					'cta-animation' => 'Yes',
-					'No' => 'No',
+					'No',
 				),
 				'allow_null' => 0,
 				'other_choice' => 0,

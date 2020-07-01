@@ -125,6 +125,7 @@ table {
 		flex-wrap: wrap;
 		justify-content: space-between;
 
+
 		/*	This column structure allows you to just add the class to the div to allow for fluid columns based on content and layout
 		When building always add .row and then the col structure after.
 		Col  = takes up ALL columns*/
@@ -137,28 +138,21 @@ table {
 			flex: 1 0;
 		}
 		.col-2{
-			flex: 0 0 48%;
+			flex: 0 1 auto;
+    		width: 48%;
 		}
 		.col-3{
-			flex: 0 0 31.3%;
+			flex-basis: 0;
+    		flex-grow: 1;
+    		margin-right:2%;
+    		&:last-of-type{
+    			margin-right:0;
+    		}
+    		
 		}
 		.col-4{
-			flex-basis: 23%;
-		}/*
-		.col_60{
-			flex: 1 0;
+			flex: 0 1 auto;
+    		width: 23%;
 		}
-		.col_50{
-		    flex: 1 0 50%;
-		}
-		.col_33{
-		  flex: 1 0;
-		}
-		.col_25 {
-			flex: 1 0 25%;
-		}
-		.col_20{
-			 width: calc(20% - 15px);
-		}*/
 	}
 }
