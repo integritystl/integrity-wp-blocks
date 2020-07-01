@@ -7,6 +7,7 @@
 **/
 $ctaLayout = get_field('cta_layout');
 $ctaCols = get_field('columns');
+$cover = get_field('img_cover');
 //styles
 $ctaBackgroundImg = get_field('cta_background_image');
 $ctaBackgroundColor = get_field('cta_background_color');
@@ -18,7 +19,7 @@ $hoverAnimation = get_field('hover_animation');
 
 ?>
 
-<div class="cta-block block-content row" style="<?php echo($ctaBackgroundColor); ?>">
+<div class="cta-block block-content row">
 
     <!-- Begin Repeater -->
     <?php if( have_rows('callout_content') ): ?>
@@ -32,7 +33,7 @@ $hoverAnimation = get_field('hover_animation');
                 $ctaUrl = $ctaLink['url'];
                 $ctaTitle = $ctaLink['title'];
             ?>
-        <div class="cta-item-wrap <?php echo($ctaLayout); ?> <?php echo($ctaCols); ?> <?php echo($ctaAlign); ?>" >
+        <div class="cta-item-wrap <?php echo($ctaLayout); ?> <?php echo($ctaCols); ?> <?php echo($hoverAnimation); ?> <?php echo($ctaAlign); ?>" >
             <div class="image-section">
                 <?php if($ctaImgOverlay): ?>
                     <div class="img-overlay" style="background-color: <?php echo( $ctaImgOverlay ); ?>; opacity: .<?php echo($overlayOpacity); ?>;"></div>
@@ -41,7 +42,7 @@ $hoverAnimation = get_field('hover_animation');
                     <img src="<?php echo( $ctaimage ); ?>">
                 <?php endif; ?>
             </div>
-        	<div class="cta-content">
+        	<div class="cta-content" style="background:<?php echo($ctaBackgroundColor); ?>;">
                  <?php if ($ctaHeadline): ?>
                     <h3><?php echo( $ctaHeadline ); ?></h3>
                 <?php endif; ?>
@@ -52,7 +53,7 @@ $hoverAnimation = get_field('hover_animation');
                     <?php echo( $ctaContent ); ?>
                 <?php endif; ?>
                 <?php if ($ctaLink): ?>
-                    <a class="" href="<?php echo esc_url( $ctaUrl ); ?>"><?php echo esc_html( $ctaTitle ); ?></a>
+                    <a class="button" href="<?php echo esc_url( $ctaUrl ); ?>">Learn More</a>
                 <?php endif; ?>
             </div>
            
