@@ -2,20 +2,20 @@
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	
+	background-color: #ccc;
 	border-radius: 0px;
 	transition: .3s all ease-in-out;
 	padding: 20px 35px;
 	display: table;
 
 	&:hover {
-		
+		cursor: pointer;
+		background-color: darken(#ccc, 10%);
 	}
 
 	&:active,
 	&:focus {
 		color: white;
-		border-color: $teal;
 		outline: 1px dotted gray;
 	}
 
@@ -28,16 +28,15 @@ input[type="submit"] {
 	@extend .button;
 	border: 2px solid;
 	background: none;
-	color: $teal;
 
 	&:active,
 	&:focus {
-		color: $teal;
 		background: none;
 	}
 
 }
 
+.post-read-more,
 .link-learn-more,
 .link {
 	color: #006178;

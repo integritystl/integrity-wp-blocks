@@ -16,7 +16,7 @@ require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-image-
 require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-callout-slider.php');
 require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-accordion.php');
 require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-social-share.php');
-require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-fancy-posts.php');
+require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-blog-post-list.php');
 require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-team-card.php');
 require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-media-callout.php');
 require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-cta.php');
@@ -30,7 +30,7 @@ require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-image-slider.p
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-callout-slider.php');
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-accordion.php');
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-social-share.php');
-require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-fancy-posts.php');
+require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-blog-post-list.php');
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-team-card.php');
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-media-callout.php');
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-cta.php');
@@ -41,7 +41,7 @@ require_once( __DIR__ . '/theme_infrastructure/ACF/acf-options.php');
 
 //Global Settings page
 if( function_exists('acf_add_options_page') ) {
-	
+
 	acf_add_options_page(array(
 		'page_title' 	=> 'Theme General Settings',
 		'menu_title'	=> 'Theme Settings',
@@ -49,19 +49,19 @@ if( function_exists('acf_add_options_page') ) {
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false
 	));
-	
+
 	acf_add_options_sub_page(array(
 		'page_title' 	=> 'Theme Header Settings',
 		'menu_title'	=> 'Header',
 		'parent_slug'	=> 'theme-general-settings',
 	));
-	
+
 	acf_add_options_sub_page(array(
 		'page_title' 	=> 'Theme Footer Settings',
 		'menu_title'	=> 'Footer',
 		'parent_slug'	=> 'theme-general-settings',
 	));
-	
+
 }
 
 // Menu location
@@ -102,7 +102,7 @@ function generate_options_css() {
     $css = ob_get_clean(); // Store output in a variable, then flush the buffer
     file_put_contents($ss_dir . '/layouts/custom-styles.css', $css, LOCK_EX); // Save it as a css file
 }
-add_action( 'acf/save_post', 'generate_options_css', 20 ); //Parse the output and write the CSS file on post save 
+add_action( 'acf/save_post', 'generate_options_css', 20 ); //Parse the output and write the CSS file on post save
 
 /**
  * Implement the Custom Header feature.

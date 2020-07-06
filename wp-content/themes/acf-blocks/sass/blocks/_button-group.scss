@@ -1,4 +1,4 @@
-.block-content{
+.button-group.block-content{
 	margin:1em 0;
 	.button-group{
 		.button-group-wrapper{
@@ -9,8 +9,8 @@
 				.button-holder{
 					margin:1em auto;
 				}
-			
-				&.button-Left{ 
+
+				&.button-Left{
 					.button-holder{
 						margin-left:0;
 					}
