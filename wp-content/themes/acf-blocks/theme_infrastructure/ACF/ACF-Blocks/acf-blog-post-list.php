@@ -3,36 +3,93 @@
 
 	acf_add_local_field_group(array(
 		'key' => 'group_5ee3c4f6a922d',
-		'title' => 'Block: Fancy Posts',
+		'title' => 'Block: Blog Post List',
 		'fields' => array(
 			array(
-				'key' => 'field_5ee3c50a63b8f',
-				'label' => 'Post Selection',
-				'name' => 'post_selection',
-				'type' => 'relationship',
+					'key' => 'field_5efb9da1f941d',
+					'label' => 'Add Filters',
+					'name' => 'add_filters',
+					'type' => 'select',
+					'instructions' => 'Filters are controlled by the Search and Filter Plugin. Go to Search and Filter > Settings to make additional changes.',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'choices' => array(
+						'no-filter' => 'No Filter',
+						'search-only' => 'Search Only',
+						'search-cat' => 'Search & Categories',
+						'search-cat-tag' => 'Search, Categories & Tags',
+					),
+					'default_value' => 'no-filter',
+					'allow_null' => 0,
+					'multiple' => 0,
+					'ui' => 1,
+					'ajax' => 1,
+					'return_format' => 'value',
+					'placeholder' => '',
+				),
+				array(
+					'key' => 'field_5efb9e4bf941e',
+					'label' => 'Choose Category',
+					'name' => 'choose_category',
+					'type' => 'taxonomy',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => array(
+						array(
+							array(
+								'field' => 'field_5efb9da1f941d',
+								'operator' => '==contains',
+								'value' => 'no-filter',
+							),
+						),
+					),
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'taxonomy' => 'category',
+					'field_type' => 'multi_select',
+					'allow_null' => 1,
+					'add_term' => 0,
+					'save_terms' => 0,
+					'load_terms' => 0,
+					'return_format' => 'id',
+					'multiple' => 0,
+				),
+
+			array(
+				'key' => 'field_5efb9ea7f941f',
+				'label' => 'Posts Per Page',
+				'name' => 'posts_per_page',
+				'type' => 'range',
 				'instructions' => '',
 				'required' => 0,
-				'conditional_logic' => 0,
+				'conditional_logic' => array(
+					array(
+						array(
+							'field' => 'field_5efb9da1f941d',
+							'operator' => '==contains',
+							'value' => 'no-filter',
+						),
+					),
+				),
 				'wrapper' => array(
 					'width' => '',
 					'class' => '',
 					'id' => '',
 				),
-				'post_type' => array(
-					0 => 'post',
-				),
-				'taxonomy' => '',
-				'filters' => array(
-					0 => 'search',
-					1 => 'post_type',
-					2 => 'taxonomy',
-				),
-				'elements' => array(
-					0 => 'featured_image',
-				),
-				'min' => '',
+				'default_value' => 36,
+				'min' => 1,
 				'max' => '',
-				'return_format' => 'object',
+				'step' => '',
+				'prepend' => '',
+				'append' => '',
 			),
 			array(
 				'key' => 'field_5ee3c53b63b90',
@@ -50,7 +107,6 @@
 				'choices' => array(
 					'stacked-card' => 'Card',
 					'side-card' => 'Inline Card',
-					'tabbed-list' => 'Tabbed',
 				),
 				'allow_null' => 0,
 				'other_choice' => 0,
@@ -179,7 +235,7 @@
 				array(
 					'param' => 'block',
 					'operator' => '==',
-					'value' => 'acf/fancy-posts',
+					'value' => 'acf/blog-post-list',
 				),
 			),
 		),

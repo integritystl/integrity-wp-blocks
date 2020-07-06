@@ -132,15 +132,16 @@ input[type="submit"] {
 	letter-spacing: <?php the_typography_field('primary_button_typography', 'letter_spacing', 'option');?>px;
 	text-decoration: <?php the_typography_field('primary_button_typography', 'text_decoration', 'option');?>;
 	text-transform: <?php the_typography_field('primary_button_typography', 'text_transform', 'option');?>;
-
 	background: <?php the_field('primary_button_background', 'option');?>;
-	border: <?php the_field('primary_border_width','option');?>px solid <?php the_field('primary_border_color','option');?>;
-
+  border-color:<?php the_field('primary_border_color','option');?>;
+  border-width: <?php the_field('primary_border_width','option');?>px;
 	text-decoration: none;
 }
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
 .button:hover{
-	background: transparent;
-	broder-color: <?php the_field('primary_button_background', 'option');?>;
+	background: darken(<?php the_field('primary_button_background', 'option');?>, 10%);
 }
 
 .secondary-button {
@@ -192,9 +193,8 @@ textarea {
 	letter-spacing: <?php the_typography_field('form_typography', 'letter_spacing', 'option');?>px;
 	text-decoration: <?php the_typography_field('form_typography', 'text_decoration', 'option');?>;
 	text-transform: <?php the_typography_field('form_typography', 'text_transform', 'option');?>;
-
-	padding: ;
-	border:<?php the_field('border_width', 'option'); ?>px solid <?php the_field('border_color', 'option'); ?>;
+	border-width: <?php the_field('border_width', 'option'); ?>px;
+  border-color: <?php the_field('border_color', 'option'); ?>;
 }
 
 /*///////////////////////
@@ -220,14 +220,14 @@ textarea {
 }
 
 /*Menu toggle */
-.menu-bar-top, 
+.menu-bar-top,
 
 .menu-bar-bottom {
-	
+
 	border:4px solid <?php the_field('open_icon_color', 'option'); ?>;
 }
-.button-open .menu-bar-top, 
-.button-open .menu-bar-middle, 
+.button-open .menu-bar-top,
+.button-open .menu-bar-middle,
 .button-open .menu-bar-bottom {
 	border:4px solid <?php the_field('close_icon_color', 'option'); ?>;
 }
