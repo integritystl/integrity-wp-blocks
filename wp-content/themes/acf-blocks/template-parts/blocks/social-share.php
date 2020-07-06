@@ -10,7 +10,7 @@ $socialContent = get_field('social_content');
 
 ?>
 
-<div class="social=share-block block-content container">
+<div class="social=share-block block-content">
 
   <div class="social-share-wrapper">
   	<?php if($socialHeadline): ?>

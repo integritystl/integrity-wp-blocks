@@ -1,0 +1,41 @@
+.button-group.block-content{
+	margin:1em 0;
+	.button-group{
+		.button-group-wrapper{
+			display: flex;
+
+			&.button-Stacked{
+				flex-direction: column;
+				.button-holder{
+					margin:1em auto;
+				}
+
+				&.button-Left{
+					.button-holder{
+						margin-left:0;
+					}
+				}
+				&.button-Right{
+					.button-holder{
+						margin-right: 0;
+					}
+				}
+			}
+			&.button-Inline{
+				justify-content: center;
+				.button-holder{
+					margin: 0 1em 0 0;
+					&:last-of-type{
+						margin-right:0;
+					}
+				}
+				&.button-Left{
+					justify-content: flex-start;
+				}
+				&.button-Right{
+					justify-content: flex-end;
+				}
+			}
+		}
+	}
+}

@@ -8,7 +8,7 @@
 
 ?>
 
-<div class="wysiwyg-block block-content container">
+<div class="wysiwyg-block block-content">
 
   <div class="wysiwyg-wrapper">
 

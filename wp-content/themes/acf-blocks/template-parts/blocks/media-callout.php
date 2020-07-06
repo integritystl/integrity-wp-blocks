@@ -15,7 +15,7 @@ $calloutAlign = get_field('callout_alignment');
 
 ?>
 
-<div class="team-card-block block-content container">
+<div class="team-card-block block-content">
 
     <div class="team-card-item <?php echo($calloutAlign); ?>" style="background:url('<?php echo($backgroundImg); ?>') <?php echo($calloutBackground); ?>">
     	<div class="media-wrapper">

@@ -18,7 +18,7 @@ $backColor = get_field('back_background');
 
 ?>
 
-<div class="flip-card-block block-content container">
+<div class="flip-card-block block-content ">
 
     <div class="block-content-section <?php echo($cardColumns); ?>" style="background: url('<?php echo($containerBackground); ?>')<?php echo($containerColor); ?>;">
 

@@ -6,9 +6,13 @@
 *
 **/
 
+$triggerBackground = get_field('trigger_background');
+$triggerColor = get_field('trigger_color');
+$contentBackground = get_field('content_background');
+$contentColor = get_field('content_color');
 ?>
 
-<div class="accordion-block block-content container">
+<div class="accordion-block block-content">
 
     <div class="block-content-section">
 
@@ -21,20 +25,16 @@
 		    <div class="accordion-item ">
 
 		      	<?php if ($headline && $bodyCopy) : ?>
-			      	<div class="collapse-toggle" role="button">
+			      	<div class="collapse-toggle" role="button" style="background:<?php echo ($triggerBackground); ?>; color: <?php echo ($triggerColor); ?>;">
 				       	<div class="collapsible">
 		          		<?php echo $headline; ?>
 							<span><i class="fas fa-plus-circle"></i></span>
 				        </div>
 					</div>
-					<?php else : ?>
-					 <div class="non-collapsible">
-						<?php echo $headline; ?>
-					</div>
 	      		<?php endif; ?>
 
 				<?php if ($bodyCopy): ?>
-					<div class="collapse-content">
+					<div class="collapse-content" style="background:<?php echo ($contentBackground); ?>; color: <?php echo ($contentColor); ?>;">
 						<div class="content-container">
 							<?php echo $bodyCopy; ?>
 						</div>

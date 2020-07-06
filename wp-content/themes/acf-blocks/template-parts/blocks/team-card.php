@@ -13,7 +13,7 @@ $profileContent = get_field('profile_blurb');
 
 ?>
 
-<div class="team-card-block block-content container">
+<div class="team-card-block block-content">
 
     <div class="team-card-item <?php echo($cardLayout); ?>">
     	<img src="<?php echo( $image ); ?>">
