@@ -25,7 +25,7 @@ $contentColor = get_field('content_color');
 		    <div class="accordion-item ">
 
 		      	<?php if ($headline && $bodyCopy) : ?>
-			      	<div class="collapse-toggle" role="button" style="background:<?php echo ($triggerBackground); ?>; color: <?php echo ($triggerColor); ?>;">
+			      	<div class="collapse-toggle" role="button" aria-hidden="true" style="background:<?php echo ($triggerBackground); ?>; color: <?php echo ($triggerColor); ?>;">
 				       	<div class="collapsible">
 		          		<?php echo $headline; ?>
 							<span><i class="fas fa-plus-circle"></i></span>
