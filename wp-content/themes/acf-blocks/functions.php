@@ -21,6 +21,7 @@ require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-team-c
 require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-media-callout.php');
 require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-cta.php');
 require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-flip-card.php');
+require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-tabs.php');
 
 //All Block ACFs
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-basic-content.php');
@@ -35,6 +36,7 @@ require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-team-card.php'
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-media-callout.php');
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-cta.php');
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-flip-card.php');
+require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-tabs.php');
 
 require_once( __DIR__ . '/theme_infrastructure/ACF/acf-options.php');
 
