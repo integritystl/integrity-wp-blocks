@@ -1,0 +1,58 @@
+.team-card-block{
+
+	.team-card-item{
+		margin:1em auto;
+		display: flex;
+		flex-direction: column;
+		.team-image{
+			display: flex;
+    		height: 300px;
+			img{
+				object-fit: cover;
+			    height: 100%;
+			    width: 100%;
+			}
+		}
+	
+		.team-content{
+			padding:20px;
+		}
+	}	
+
+		&.card-top,
+		&.card-left{
+			.team-image{
+				position: relative;
+				width: 20vw;
+				height: 20vw;
+				overflow: hidden;
+				border-radius: 50%;
+				margin: 20px;
+			}
+
+		}
+		&.card-top{
+			.team-image{
+				margin: 30px auto 20px;
+			}
+			.col-3{
+				.team-image{
+					width:15vw;
+					height: 15vw;
+				}
+			}
+		}
+		&.card-left{
+			.team-card-item{
+				flex-direction: row;
+				object-fit: center;
+				.team-image{
+					margin:auto 20px;
+				    width: 10vw;
+				    height: 15vh;
+				        flex: 1 0 auto;
+				}
+			}
+		}
+	
+}

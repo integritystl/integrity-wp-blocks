@@ -7,6 +7,8 @@
 **/
 
 //Style Options
+$imgLayout = get_field('image_layout');
+$columns = get_field('columns');
 $textBackground = get_field('text_background');
 $textAlign = get_field('align_text');
 
@@ -20,7 +22,7 @@ $textAlign = get_field('align_text');
       $subHeadline = get_sub_field('callout_subheadline');
       $content = get_sub_field('content');
     ?>
-    <div class="image-callout-wrapper col">
+    <div class="image-callout-wrapper <?php echo($columns); ?> <?php echo($imgLayout); ?>">
       <div class="image-wrapper">
         <?php if ($img): ?>
           <img src="<?php echo ($img); ?>">
