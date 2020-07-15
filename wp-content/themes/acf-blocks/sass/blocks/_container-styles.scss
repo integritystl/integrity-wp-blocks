@@ -1,0 +1,74 @@
+.block-content{
+	&.page-width{
+		left: 50%;
+		margin-left: -50vw;
+		margin-right: -50vw;
+		max-width: 100vw;
+		position: relative;
+		right: 50%;
+		width: 100vw;
+	}
+
+}
+/*Dividers*/
+.shape-divider{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    background-position:bottom center;
+    z-index: 10;
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+    margin-top: -117px;
+
+	&.slant{
+		background-image: url('inc/shape-div-img/slant-bottom.svg');
+		height: 25vh;
+		background-position: center center;
+		margin-top:-142px;
+	}
+	&.slant-up{
+		background-image: url('inc/shape-div-img/slant-up-bottom.svg');
+		height: 20vh;
+		margin-top:-155px;
+	}
+	&.wave-loop{
+		background-image: url('inc/shape-div-img/wavy-loops-bottom.svg');
+		height: 20vh;
+	}
+	&.basic-triangle{
+		background-image: url('inc/shape-div-img/basic-triangle-bottom.svg');
+		height: 20vh;
+	}
+	&.side-triangle{
+		background-image: url('inc/shape-div-img/triangle-uneven-bottom.svg');
+		background-position: bottom left;
+		height: 20vh;
+	}
+	&.round{
+		background-image: url('inc/shape-div-img/big-round-bottom.svg');
+		height: 30vh;
+	}
+	&.clouds{
+		background-image: url('inc/shape-div-img/clouds-bottom.svg');
+		height: 32vh;
+		margin-top: -144px;
+	}
+	&.faded-clouds{
+		background-image: url('inc/shape-div-img/faded-clouds-bottom.svg');
+		height: 32vh;
+		margin-top: -144px;
+	}
+	&.shred-paper{
+		background-image: url('inc/shape-div-img/shredded-paper-bottom.svg');
+		height: 26vh;
+		margin-top: -151px;
+	}
+	
+	
+}
