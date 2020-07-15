@@ -25,9 +25,9 @@
 				'endpoint' => 0,
 			),
 			array(
-				'key' => 'field_5ee8ee5e26fe0',
+				'key' => 'field_5ee8ee5e26978khk',
 				'label' => 'CTA Layout',
-				'name' => 'cta_layout',
+				'name' => 'cta_width',
 				'type' => 'radio',
 				'instructions' => '',
 				'required' => 0,
@@ -38,12 +38,12 @@
 					'id' => '',
 				),
 				'choices' => array(
-					'content-width' => 'Content Width',
+					'container' => 'Content Width',
 					'full-width' => 'Page Width'
 				),
 				'allow_null' => 0,
 				'other_choice' => 0,
-				'default_value' => 'content-width',
+				'default_value' => 'container',
 				'layout' => 'horizontal',
 				'return_format' => 'value',
 				'save_other_choice' => 0,

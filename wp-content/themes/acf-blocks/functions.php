@@ -22,6 +22,7 @@ require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-media-
 require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-cta.php');
 require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-flip-card.php');
 require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-tabs.php');
+require_once( __DIR__ . '/theme_infrastructure/CustomPostTypes/Blocks/cpt-shape-divider.php');
 
 //All Block ACFs
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-basic-content.php');
@@ -37,8 +38,10 @@ require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-media-callout.
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-cta.php');
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-flip-card.php');
 require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-tabs.php');
+require_once( __DIR__ . '/theme_infrastructure/ACF/ACF-Blocks/acf-shape-divider.php');
 
 require_once( __DIR__ . '/theme_infrastructure/ACF/acf-options.php');
+require_once( __DIR__ . '/theme_infrastructure/ACF/acf-container-styles.php');
 
 
 //Global Settings page
